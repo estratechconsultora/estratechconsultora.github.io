@@ -38,7 +38,7 @@
     <!--.areas { color: var(--acento); font-weight: 600; margin: 0 0 12px; font-size: .95rem; }
     .descripcion { color: var(--suave); margin: 0 auto 28px; padding: 0 24px; line-height: 1.5; }
     .enlaces { display: flex; flex-direction: column; gap: 12px; } -->
-    .areas { color: var(--acento); font-weight: 600; margin: 0 0 12px; font-size: .95rem; }
+    <!--.areas { color: var(--acento); font-weight: 600; margin: 0 0 12px; font-size: .95rem; }
     .descripcion { color: var(--suave); margin: 12px auto 28px; padding: 0 24px; font-size: 0.88rem; line-height: 1.5; }
     .enlaces { display: flex; flex-direction: column; gap: 12px; }
     .boton {
@@ -51,7 +51,40 @@
       text-decoration: none;
       font-weight: 600;
       transition: transform .15s ease, border-color .15s ease;
+    } -->
+    .areas { color: var(--acento); font-weight: 600; margin: 0 0 12px; font-size: .95rem; }
+    .descripcion { color: var(--suave); margin: 12px auto 28px; padding: 0 24px; font-size: 0.88rem; line-height: 1.5; }
+    .enlaces { display: flex; flex-direction: column; gap: 12px; }
+    .boton {
+      display: flex;
+      align-items: center;
+      gap: 14px; /* Margen entre icono y texto */
+      padding: 16px 20px; /* Margen entre extremo del botón e icono */
+      background: var(--boton);
+      color: var(--texto);
+      border: 1px solid var(--borde);
+      border-radius: 14px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform .15s ease, border-color .15s ease;
     }
+    .boton svg {
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .boton-texto {
+      text-align: left; /* Alineación del texto a la izquierda */
+      display: flex;
+      flex-direction: column;
+    }
+    .boton small { font-weight: 400; color: var(--suave); margin-top: 2px; }
+    .boton:hover, .boton:focus-visible { transform: translateY(-2px); border-color: var(--acento); }
     .boton small { display: block; font-weight: 400; color: var(--suave); margin-top: 4px; }
     .boton:hover, .boton:focus-visible { transform: translateY(-2px); border-color: var(--acento); }
     footer { margin-top: 32px; color: var(--suave); font-size: .85rem; line-height: 1.6; }
