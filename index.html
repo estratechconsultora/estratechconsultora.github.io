@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ESTRATECH · Enlaces</title>
-  <meta name="description" content="Enlaces oficiales de Tu Empresa.">
+  <meta name="description" content="Enlaces oficiales de ESTRATECH — Patrimonio, Medio Ambiente y Tecnología.">
   <meta name="theme-color" content="#F4F3EF">
+  <link rel="icon" href="logo.png">
   <style>
     :root {
       --fondo: #F4F3EF;
@@ -26,14 +27,15 @@
       justify-content: center;
       padding: 40px 16px;
     }
-    main {
-      width: 100%;
-      max-width: 420px;
-      text-align: center;
+    main { width: 100%; max-width: 420px; text-align: center; }
+    .logo {
+      width: 110px; height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 16px;
     }
-    /* Si tienes logo: sube logo.png a la carpeta y quita los comentarios de la etiqueta img en el HTML */
-    .logo { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; margin-bottom: 16px; }
-    h1 { font-size: 1.6rem; margin: 0 0 8px; letter-spacing: 0.04em; }
+    h1 { font-size: 1.6rem; margin: 0 0 6px; letter-spacing: 0.06em; }
+    .areas { color: var(--acento); font-weight: 600; margin: 0 0 12px; font-size: .95rem; }
     .descripcion { color: var(--suave); margin: 0 0 28px; line-height: 1.5; }
     .enlaces { display: flex; flex-direction: column; gap: 12px; }
     .boton {
@@ -49,26 +51,31 @@
     }
     .boton small { display: block; font-weight: 400; color: var(--suave); margin-top: 4px; }
     .boton:hover, .boton:focus-visible { transform: translateY(-2px); border-color: var(--acento); }
-    footer { margin-top: 32px; color: var(--suave); font-size: .85rem; line-height: 1.5; }
+    footer { margin-top: 32px; color: var(--suave); font-size: .85rem; line-height: 1.6; }
   </style>
 </head>
 <body>
   <main>
-    <!-- <img class="logo" src="logo.png" alt="Logo de Tu Empresa"> -->
-    <h1>TU EMPRESA</h1>
-    <p class="descripcion">Una frase corta que explique lo que hace tu empresa.</p>
+    <!-- El logo debe subirse al repositorio con el nombre exacto: logo.png -->
+    <img class="logo" src="logo.png" alt="Logo de ESTRATECH" onerror="this.style.display='none'">
+
+    <h1>ESTRATECH</h1>
+    <p class="areas">Patrimonio · Medio Ambiente · Tecnología</p>
+    <p class="descripcion">
+      Gestión patrimonial con enfoque estratégico.<br>
+      Ciencia aplicada para liderar proyectos desde la planificación hasta la ejecución.
+    </p>
 
     <nav class="enlaces">
-      <!-- Cambia los textos y las direcciones (href). Para agregar un botón, copia una línea completa. -->
-      <a class="boton" href="https://www.tuempresa.cl/">Sitio web<small>tuempresa.cl</small></a>
-      <a class="boton" href="https://wa.me/56912345678?text=Hola%2C%20quisiera%20realizar%20una%20consulta.">WhatsApp<small>+56 9 1234 5678</small></a>
-      <a class="boton" href="mailto:contacto@tuempresa.cl">Correo electrónico<small>contacto@tuempresa.cl</small></a>
-      <a class="boton" href="brochure.pdf">Brochure<small>Servicios y capacidades</small></a>
+      <a class="boton" href="https://www.estratech.org/">Sitio web<small>estratech.org</small></a>
+      <a class="boton" href="https://wa.me/56956019976?text=Hola%20ESTRATECH%2C%20quisiera%20realizar%20una%20consulta.">WhatsApp<small>+56 9 5601 9976</small></a>
+      <a class="boton" href="mailto:info@estratech.org">Correo electrónico<small>info@estratech.org</small></a>
+      <a class="boton" href="brochure.pdf">Brochure corporativo<small>Servicios y capacidades</small></a>
     </nav>
 
     <footer>
-      Tu Empresa<br>
-      Ciudad, País
+      <strong>ESTRATECH</strong><br>
+      Concepción, Chile
     </footer>
   </main>
 </body>
