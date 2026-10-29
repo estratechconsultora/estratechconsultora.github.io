@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESTRATECH · Enlaces</title>
+  <meta name="description" content="Enlaces oficiales de Tu Empresa.">
+  <meta name="theme-color" content="#F4F3EF">
+  <style>
+    :root {
+      --fondo: #F4F3EF;
+      --texto: #1f2a2e;
+      --suave: #5b6a70;
+      --boton: #ffffff;
+      --borde: #d9d7cf;
+      --acento: #2f6b5a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--fondo);
+      color: var(--texto);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 40px 16px;
+    }
+    main {
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+    }
+    /* Si tienes logo: sube logo.png a la carpeta y quita los comentarios de la etiqueta img en el HTML */
+    .logo { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; margin-bottom: 16px; }
+    h1 { font-size: 1.6rem; margin: 0 0 8px; letter-spacing: 0.04em; }
+    .descripcion { color: var(--suave); margin: 0 0 28px; line-height: 1.5; }
+    .enlaces { display: flex; flex-direction: column; gap: 12px; }
+    .boton {
+      display: block;
+      padding: 16px 18px;
+      background: var(--boton);
+      color: var(--texto);
+      border: 1px solid var(--borde);
+      border-radius: 14px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform .15s ease, border-color .15s ease;
+    }
+    .boton small { display: block; font-weight: 400; color: var(--suave); margin-top: 4px; }
+    .boton:hover, .boton:focus-visible { transform: translateY(-2px); border-color: var(--acento); }
+    footer { margin-top: 32px; color: var(--suave); font-size: .85rem; line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- <img class="logo" src="logo.png" alt="Logo de Tu Empresa"> -->
+    <h1>TU EMPRESA</h1>
+    <p class="descripcion">Una frase corta que explique lo que hace tu empresa.</p>
+
+    <nav class="enlaces">
+      <!-- Cambia los textos y las direcciones (href). Para agregar un botón, copia una línea completa. -->
+      <a class="boton" href="https://www.tuempresa.cl/">Sitio web<small>tuempresa.cl</small></a>
+      <a class="boton" href="https://wa.me/56912345678?text=Hola%2C%20quisiera%20realizar%20una%20consulta.">WhatsApp<small>+56 9 1234 5678</small></a>
+      <a class="boton" href="mailto:contacto@tuempresa.cl">Correo electrónico<small>contacto@tuempresa.cl</small></a>
+      <a class="boton" href="brochure.pdf">Brochure<small>Servicios y capacidades</small></a>
+    </nav>
+
+    <footer>
+      Tu Empresa<br>
+      Ciudad, País
+    </footer>
+  </main>
+</body>
+</html>
